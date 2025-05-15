@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Like </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/8BPLpRHyevwy4OhNjFtPnHlbb201Nfs3i_7CYXNvyTU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9h/dXR1bW4tc3ByaW5n/LWJsb25kZS1wZXJz/b24tYmVhdXRpZnVs/XzExMzktODQ3Lmpw/Zz9zZW10PWFpc19o/eWJyaWQmdz03NDA" alt="model girl">
+        <i class="logo ri-heart-3-fill"></i>
+    </div>
+
+    <script>
+        console.log("hello")
+        const container = document.querySelector(".container");
+        const icon = document.querySelector(".logo")
+        container.addEventListener("dblclick" , (e)=> {
+            icon.style.transform = "translate(-50% , -50%) scale(1.2)";
+            icon.style.opacity = 0.8;
+
+            setTimeout(()=> {
+                icon.style.opacity = 0;
+                icon.style.transform = "translate(-50% , -50%) scale(0)";
+            },2000)
+
+
+        })
+    </script>
+
+</body>
+
+</html>
