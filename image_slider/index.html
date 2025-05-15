@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+    <div class="slideshow_container">
+
+        <div class="slideshow_elem">
+            <img src="img/img1.jpeg" alt="">  
+        </div>
+
+        
+        <a class="push_r" href="#">
+            <i class="ri-arrow-right-wide-line"></i>
+        </a>
+        <a class="push_l" href="#">
+            <i class="ri-arrow-left-wide-line"></i>
+        </a>
+    </div>
+
+        <script>
+            
+            const images = [];
+            images[0] = "img/img1.jpeg"
+            images[1] = "img/img2.jpeg"
+            images[2] = "img/img3.jpeg"
+            images[3] = "img/img4.jpeg"
+            images[4] = "img/img5.jpeg"
+
+            let i = 0;
+            const imageTag = document.querySelector(".slideshow_elem img")
+            console.log(imageTag);
+            const pushR = document.querySelector(".push_r")
+            pushR.addEventListener("click" , (e)=> {
+                
+                if(i < images.length-1) {
+                    i++;
+                    console.log(i);
+                    imageTag.src = images[i];
+                } else {
+                    i=0;
+                    imageTag.src = images[i];
+                }
+            })
+
+            const pushL = document.querySelector(".push_l")
+            pushL.addEventListener("click" , (e)=> {
+                
+                if(i > 0 ) {
+                    i--;
+                    console.log(i);
+                    imageTag.src = images[i];
+                } else {
+                    i = images.length - 1
+                    imageTag.src = images[i];
+                }
+            })
+
+           const t = setInterval(()=> {
+            if(i < images.length-1) {
+                    i++;
+                    // console.log(i);
+                    imageTag.src = images[i];
+                } else {
+                    i=0;
+                    imageTag.src = images[i];
+                }
+                console.log(t);
+           },4000)
+           
+
+
+        </script>
+</body>
+</html>
