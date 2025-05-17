@@ -10,14 +10,18 @@
     height: 100%;
     font-family: "FF DIN for Puma W01 Cond Bold";
     /* background-color: black; */
+    /* overflow-x: hidden; */
  }
+
 
  header {
-    height: 100vh;
-    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0;
+    z-index: 88899999;
  }
 
- header .top {
+ .top {
     height: 50px;
     text-align: center;
     align-content: center;
@@ -34,8 +38,7 @@
     align-items: center;
     background-color: black;
     color: white;
-    position: sticky;
-    top: 20px;
+    
 
     .logo {
         margin-left: 50px;
@@ -124,14 +127,14 @@
 
  #page1 {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     /* background-color: red; */
     /* border: 2px solid red; */
     /* background-color: red; */
 
     .text_wrapper {
         width: 100%;
-        height: 88%;
+        height: 70%;
         background-color: #412716;
         margin-top: 30px;
         display: flex;
@@ -176,4 +179,39 @@
         }
     }
 
+ }
+
+ #page2 {
+    height: 100%;
+    position: relative;
+    color: white;
+
+    .text_wrapper {
+        position: absolute;
+        top: 25%;
+        left: 60px;
+
+        > * {
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.1;
+            font-weight: 900;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 100;
+            font-family: sans-serif;
+            margin-top: 8px;
+        }
+    }
+     button {
+        margin-top: 14px;
+        padding: 12px 14px;
+        font-size: 1rem;
+        font-weight: 600;
+        border: none;
+     }
  }

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* align-content: center; */
+}
+
+main {
+    width: 400px;
+    margin-inline: auto;
+}
+.card {
+    width: 100%;
+    background-color: rgba(63, 116, 98, 0.671);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    gap: 10px;
+    color: white;
+    margin-top: 30%;
+
+    .weather {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* visibility: hidden; */
+        display: none;
+    }
+
+    h1 {
+        margin-top: 2px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        padding: 14px 40px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .search_bar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        /* border: 2px solid black; */
+        padding-bottom: 30px;
+    }
+    .search_bar i {
+        font-size: 1rem;
+        padding: 12px;
+        display: flex;
+        color: black;
+        font-weight: 200;
+        background-color: white;
+        border-radius: 50%;
+    } 
+    .d_row {
+        display: flex;
+        margin: 20px;
+        width: 90%;
+        justify-content:space-between ;
+        
+    }
+    .d_row img {
+        height: 30px;
+    }
+
+    .humidity_col,.speed_col {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        p:first-child {
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+    }
+}

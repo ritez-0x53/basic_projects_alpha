@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <main>
+        <div class="card">
+
+            <!-- search -->
+             <div class="search_bar">
+                 <input id="city_input" required autocomplete="off" autofocus type="text" placeholder="enter city name">
+                 <i id="search_button" class="ri-search-line"></i>
+             </div>
+
+            <div class="weather">
+
+                <!-- img -->
+                <img id="main_img" height="100" src=""  alt="">
+                
+                <!-- temperature -->
+                <h2 id="temp">0</h2>
+                <!-- city -->
+                <h1 id="city">0</h1>
+                
+                <!-- deatails column -->
+                <div class="d_row">
+                    <div class="humidity_col">
+                        <img src="images/humidity.png" alt="">
+                        <div class="text">
+                            <p id="humidity">0</p>
+                            <p>Humidity</p>
+                        </div>
+                        
+                    </div>
+                    <div class="speed_col">
+                        <img src="images/wind.png" alt="">
+                        <div class="text">
+                            <p id="wind_speed">0</p>
+                            <p>Speed</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
